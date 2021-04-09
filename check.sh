@@ -58,6 +58,7 @@ fi
 for IP in ${RESULTS}; do
   echo "Checking ${IP} in several blacklists ..."
   dnsbl_checker --speed=100 ip ${IP}
+  echo
   sleep 20
 done
 
